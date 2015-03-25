@@ -84,7 +84,7 @@ namespace TradeAndTravel
         private void HandleListInventoryInteraction(Person actor)
         {
             var inventory = actor.ListInventory();
-            foreach (var item in inventory)
+            foreach (var item in inventory)     
             {
                 if (ownerByItem[item] == actor)
                 {

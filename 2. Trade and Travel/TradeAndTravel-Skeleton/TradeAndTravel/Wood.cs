@@ -24,10 +24,6 @@ namespace TradeAndTravel
                     this.Value--;
                 }
             }
-            if (interaction == "gather")
-            {
-                
-            }
         }
     }
 }

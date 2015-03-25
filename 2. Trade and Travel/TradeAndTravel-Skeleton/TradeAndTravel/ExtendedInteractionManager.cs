@@ -94,14 +94,14 @@ namespace TradeAndTravel
             {
                 if (actor.ListInventory().FirstOrDefault(x => x.ItemType == ItemType.Wood) != null)
                 {
-                    actor.AddToInventory(new Weapon(itemName, actor.Location));
+                    AddToPerson(actor, new Weapon(itemName, actor.Location));
                 }
             }
             else if (type == "armor")
             {
                 if (actor.ListInventory().FirstOrDefault(x => x.ItemType == ItemType.Iron) != null)
                 {
-                    actor.AddToInventory(new Armor(itemName, actor.Location));
+                    AddToPerson(actor, new Armor(itemName, actor.Location));
                 }
             }
         }
@@ -145,5 +145,16 @@ namespace TradeAndTravel
             return person;
         }
 
+        private void UpdateOwnerByItem(Item item, Person owner)
+        {
+            if (ownerByItem.ContainsKey(item))
+            {
+                ownerByItem[item] = owner;
+            }
+            else
+            {
+                ownerByItem.Add(item, owner);
+            }
+        }
     }
 }
