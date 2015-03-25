@@ -1,7 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcademyEcosystem", "AcademyEcosystem\AcademyEcosystem.csproj", "{D8D04BC7-F11B-43FF-A30B-58B68EBB7007}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unified", "Unified\Unified.csproj", "{37F4898F-A7F0-4571-B07D-30876FF81613}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +17,10 @@ Global
 		{D8D04BC7-F11B-43FF-A30B-58B68EBB7007}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8D04BC7-F11B-43FF-A30B-58B68EBB7007}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8D04BC7-F11B-43FF-A30B-58B68EBB7007}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37F4898F-A7F0-4571-B07D-30876FF81613}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37F4898F-A7F0-4571-B07D-30876FF81613}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37F4898F-A7F0-4571-B07D-30876FF81613}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37F4898F-A7F0-4571-B07D-30876FF81613}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
