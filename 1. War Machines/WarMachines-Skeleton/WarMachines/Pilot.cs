@@ -2,24 +2,54 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using WarMachines.Interfaces;
 
 namespace WarMachines
 {
     public class Pilot : WarMachines.Interfaces.IPilot
     {
-        public string Name
+        private string name;
+        private List<IMachine> machines;
+
+        public Pilot(string name)           
         {
-            get { throw new NotImplementedException(); }
+            this.name = name;
+            machines = new List<IMachine>();
         }
 
-        public void AddMachine(Interfaces.IMachine machine)
+        public string Name
         {
-            throw new NotImplementedException();
+            get { return this.name; }
+        }
+
+        public void AddMachine(IMachine machine)
+        {
+            machines.Add(machine);
         }
 
         public string Report()
         {
-            throw new NotImplementedException();
+            var builder = new StringBuilder();            
+            string countMachinesAsString = null;
+
+            if (this.machines.Count == 0)
+            {
+                countMachinesAsString = "no machines";
+            }
+            else if (this.machines.Count == 1)
+            {
+                countMachinesAsString = "1 machine";                
+            }
+            else if (this.machines.Count > 1)
+            {
+                countMachinesAsString = machines.Count + " machines";
+            }
+            builder.AppendFormat("{0} - {1}", this.Name, countMachinesAsString);
+            foreach (var machine  in this.machines)
+            {
+                builder.Append("\n" + machine.ToString());
+            }
+            return builder.ToString();
         }
     }
 }

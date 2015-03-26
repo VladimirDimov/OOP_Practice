@@ -9,11 +9,19 @@ namespace WarMachines
 {
     public class Fighter : Machine, IFighter
     {
+        private const double FighterInitialHealth = 200;
+
+        public Fighter(string name, double attackPoints, double defensePoints, bool stealthMode)
+            :base(name, attackPoints, defensePoints)
+        {
+            this.isStealthMode = stealthMode;
+        }
+
         private bool isStealthMode;
 
         public bool StealthMode
         {
-            get;
+            get { return this.isStealthMode; }
         }
 
         public void ToggleStealthMode()
