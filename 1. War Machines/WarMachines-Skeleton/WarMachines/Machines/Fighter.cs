@@ -15,6 +15,7 @@ namespace WarMachines
             :base(name, attackPoints, defensePoints)
         {
             this.isStealthMode = stealthMode;
+            this.HealthPoints = FighterInitialHealth;
         }
 
         private bool isStealthMode;

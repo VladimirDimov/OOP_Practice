@@ -106,12 +106,12 @@ namespace WarMachines.Machines
             if (this is Tank)
             {
                 var asTank = this as Tank;
-                builder.AppendFormat("*Defense: {0}", asTank.DefenseMode ? "On" : "OFF");
+                builder.AppendFormat("*Defense: {0}", asTank.DefenseMode ? "ON" : "OFF");
             }
             else if (this is Fighter)
             {
                 var asTank = this as Fighter;
-                builder.AppendFormat("*Stealth: {0}", asTank.StealthMode ? "On" : "OFF");
+                builder.AppendFormat("*Stealth: {0}", asTank.StealthMode ? "ON" : "OFF");
             }
             return builder.ToString();
         }
