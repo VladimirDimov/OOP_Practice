@@ -1,13 +1,13 @@
-﻿using System;
+﻿namespace FurnitureManufacturer.Models
+{
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using FurnitureManufacturer.Interfaces;
 
-namespace FurnitureManufacturer.Models
-{
-    class Company : FurnitureManufacturer.Interfaces.ICompany
+    class Company : ICompany
     {
         private string name;
         private string registrationNumber;
@@ -54,7 +54,7 @@ namespace FurnitureManufacturer.Models
             }
         }
 
-        public ICollection<Interfaces.IFurniture> Furnitures
+        public ICollection<IFurniture> Furnitures
         {
             get
             {
@@ -62,7 +62,7 @@ namespace FurnitureManufacturer.Models
             }
         }
 
-        public void Add(Interfaces.IFurniture furniture)
+        public void Add(IFurniture furniture)
         {
             this.furnitures.Add(furniture);
         }
@@ -81,7 +81,9 @@ namespace FurnitureManufacturer.Models
         {
             var builder = new List<string>();
             builder.Add(string.Format("{0} - {1} - {2}", this.name, this.RegistrationNumber,  GetNumberOfFurnituresAsString()));
-            foreach (var item in this.furnitures)
+            var sortedFurnitures = this.furnitures.OrderBy(x => x.Price).ThenBy(x => x.Model);
+
+            foreach (var item in sortedFurnitures)
             {
                 builder.Add(item.ToString());
             }

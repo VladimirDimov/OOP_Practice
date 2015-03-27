@@ -1,16 +1,16 @@
-﻿using System;
+﻿namespace FurnitureManufacturer.Models
+{
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using FurnitureManufacturer.Interfaces;
 using System.Threading.Tasks;
 
-namespace FurnitureManufacturer.Models
-{
-    public class Table : Furniture, FurnitureManufacturer.Interfaces.ITable
+    public class Table : Furniture, ITable
     {
         private decimal length;
         private decimal width;
-        private decimal area;
 
         public Table(string model, string materialType, decimal price, decimal heigth, decimal length, decimal width)
             : base(model, materialType, price, heigth)

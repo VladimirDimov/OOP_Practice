@@ -1,12 +1,13 @@
-﻿using System;
+﻿namespace FurnitureManufacturer.Models
+{
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FurnitureManufacturer.Interfaces;
 
-namespace FurnitureManufacturer.Models
-{
-    public class Chair : Furniture, FurnitureManufacturer.Interfaces.IChair
+    public class Chair : Furniture, IChair
     {
         private int numberOfLegs;
 

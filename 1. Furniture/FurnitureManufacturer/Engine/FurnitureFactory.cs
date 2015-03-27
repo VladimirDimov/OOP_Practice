@@ -1,9 +1,7 @@
 ﻿namespace FurnitureManufacturer.Engine.Factories
 {
     using System;
-
     using Interfaces;
-    using Interfaces.Engine;
     using Models;
 
     public class FurnitureFactory : IFurnitureFactory
@@ -15,23 +13,23 @@
 
         public ITable CreateTable(string model, string materialType, decimal price, decimal height, decimal length, decimal width)
         {
-            return new Table(model, materialType, price, height, length, width);
+            return new Table(model, GetMaterialType(materialType).ToString(), price, height, length, width);
         }
 
         public IChair CreateChair(string model, string materialType, decimal price, decimal height, int numberOfLegs)
         {
-            return new Chair(model, materialType, price, height, numberOfLegs);
+            return new Chair(model, GetMaterialType(materialType).ToString(), price, height, numberOfLegs);
         }
 
         public IAdjustableChair CreateAdjustableChair(string model, string materialType, decimal price, decimal height, int numberOfLegs)
         {
-            return new AdjustableChair(model, materialType, price, height, numberOfLegs);
+            return new AdjustableChair(model, GetMaterialType(materialType).ToString(), price, height, numberOfLegs);
 
         }
 
         public IConvertibleChair CreateConvertibleChair(string model, string materialType, decimal price, decimal height, int numberOfLegs)
         {
-            return new ConvertibleChair(model, materialType, price, height, numberOfLegs);
+            return new ConvertibleChair(model, GetMaterialType(materialType).ToString(), price, height, numberOfLegs);
         }
 
         private MaterialType GetMaterialType(string material)

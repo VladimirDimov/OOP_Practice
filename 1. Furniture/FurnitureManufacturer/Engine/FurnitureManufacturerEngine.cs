@@ -1,10 +1,8 @@
 ﻿namespace FurnitureManufacturer.Engine
 {
     using System.Collections.Generic;
-
     using Factories;
     using Interfaces;
-    using Interfaces.Engine;
 
     public sealed class FurnitureManufacturerEngine : IFurnitureManufacturerEngine
     {

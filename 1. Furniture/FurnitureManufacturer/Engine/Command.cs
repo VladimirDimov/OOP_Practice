@@ -1,10 +1,10 @@
-﻿namespace FurnitureManufacturer.Engine
-{
-    using System;
+﻿    using System;
     using System.Collections.Generic;
+    using FurnitureManufacturer.Engine;
+    using FurnitureManufacturer.Interfaces;
 
-    using Interfaces.Engine;
-
+namespace FurnitureManufacturer.Engine
+{
     public class Command : ICommand
     {
         private const string NullOrEmptyNameErrorMessage = "Name cannot be null or empty";

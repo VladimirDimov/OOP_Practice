@@ -1,12 +1,13 @@
-﻿using System;
+﻿namespace FurnitureManufacturer.Models
+{
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using FurnitureManufacturer.Interfaces;
 using System.Threading.Tasks;
 
-namespace FurnitureManufacturer.Models
-{
-    public class ConvertibleChair : Chair, FurnitureManufacturer.Interfaces.IConvertibleChair
+    public class ConvertibleChair : Chair, IConvertibleChair
     {
         private const decimal ConvertedHeight = 0.10m;
 

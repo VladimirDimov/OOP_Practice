@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace FurnitureManufacturer.Models
 {
-    public class Furniture : FurnitureManufacturer.Interfaces.IFurniture
+using System.Text;
+using FurnitureManufacturer.Interfaces;
+using System.Threading.Tasks;
+
+    public class Furniture : IFurniture
     {
         #region Fields
         private string model;

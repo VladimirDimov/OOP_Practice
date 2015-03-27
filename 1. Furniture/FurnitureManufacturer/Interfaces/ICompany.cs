@@ -1,7 +1,7 @@
-﻿namespace FurnitureManufacturer.Interfaces
-{
-    using System.Collections.Generic;
+﻿    using System.Collections.Generic;
 
+namespace FurnitureManufacturer.Interfaces
+{
     public interface ICompany
     {
         string Name { get; }

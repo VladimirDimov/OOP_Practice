@@ -1,11 +1,10 @@
-﻿namespace FurnitureManufacturer.Engine
-{
-    using System;
+﻿    using System;
     using System.Collections.Generic;
     using System.Text;
+    using FurnitureManufacturer.Interfaces;
 
-    using Interfaces.Engine;
-
+namespace FurnitureManufacturer.Engine
+{
     public class ConsoleRenderer : IRenderer
     {
         public IEnumerable<string> Input()
