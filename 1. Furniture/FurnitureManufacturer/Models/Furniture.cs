@@ -38,6 +38,8 @@ namespace FurnitureManufacturer.Models
                 {
                     throw new ArgumentException("Model name must be at least 3 symbols");
                 }
+
+                this.model = value;
             }
         }
 
@@ -92,6 +94,9 @@ namespace FurnitureManufacturer.Models
             }
         }
         #endregion
-
+        //public virtual string ToString()
+        //{
+        //    return null;
+        //}
     }
 }

@@ -8,7 +8,7 @@
     {
         public ICompany CreateCompany(string name, string registrationNumber)
         {
-            // TODO: Implement this method
+            return new Company(name, registrationNumber);
         }
     }
 }
