@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{353445C0-D206-4C03-AC09-86D82EFF9C3C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>HTMLRenderer</RootNamespace>
-    <AssemblyName>HTMLRenderer</AssemblyName>
+    <RootNamespace>SoftwareAcademy</RootNamespace>
+    <AssemblyName>SoftwareAcademy</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -36,10 +36,7 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HTMLRenderer.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
+    <Compile Include="SoftwareAcademy.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

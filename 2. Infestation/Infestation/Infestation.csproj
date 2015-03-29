@@ -4,11 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{353445C0-D206-4C03-AC09-86D82EFF9C3C}</ProjectGuid>
+    <ProjectGuid>{0BA8ED15-5A8C-4674-8935-4F9F6F727ADE}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>HTMLRenderer</RootNamespace>
-    <AssemblyName>HTMLRenderer</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Infestation</RootNamespace>
+    <AssemblyName>Infestation</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -33,13 +34,38 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HTMLRenderer.cs" />
+    <Compile Include="AggressionCatalyst.cs" />
+    <Compile Include="Dog.cs" />
+    <Compile Include="ExtendedHoldingPen.cs" />
+    <Compile Include="HealthCatalyst.cs" />
+    <Compile Include="HoldingPen.cs" />
+    <Compile Include="Human.cs" />
+    <Compile Include="InfestationRequirements.cs" />
+    <Compile Include="InfestationSpores.cs" />
+    <Compile Include="Interaction.cs" />
+    <Compile Include="InteractionType.cs" />
+    <Compile Include="ISupplement.cs" />
+    <Compile Include="Marine.cs" />
+    <Compile Include="Parasite.cs" />
+    <Compile Include="PowerCatalyst.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Queen.cs" />
+    <Compile Include="Tank.cs" />
+    <Compile Include="Unit.cs" />
+    <Compile Include="UnitClassification.cs" />
+    <Compile Include="UnitInfo.cs" />
+    <Compile Include="Weapon.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
