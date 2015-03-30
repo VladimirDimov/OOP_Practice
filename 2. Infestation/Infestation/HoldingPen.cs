@@ -77,7 +77,6 @@ namespace Infestation
             {
                 case InteractionType.Attack:
                     Unit targetUnit = this.GetUnit(interaction.TargetUnit);
-
                     targetUnit.DecreaseBaseHealth(interaction.SourceUnit.Power);
                     break;
                 default:

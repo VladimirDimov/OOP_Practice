@@ -47,6 +47,7 @@
     <Compile Include="HealthCatalyst.cs" />
     <Compile Include="HoldingPen.cs" />
     <Compile Include="Human.cs" />
+    <Compile Include="Infest.cs" />
     <Compile Include="InfestationRequirements.cs" />
     <Compile Include="InfestationSpores.cs" />
     <Compile Include="Interaction.cs" />
@@ -63,6 +64,7 @@
     <Compile Include="UnitClassification.cs" />
     <Compile Include="UnitInfo.cs" />
     <Compile Include="Weapon.cs" />
+    <Compile Include="WeaponrySkill.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram2.cd" />

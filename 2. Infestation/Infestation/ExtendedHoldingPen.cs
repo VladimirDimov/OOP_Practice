@@ -45,9 +45,26 @@ namespace Infestation
                     var marine = new Marine(commandWords[2]);
                     this.InsertUnit(marine);
                     break;
-
+                case "Parasite":
+                    var parasite = new Parasite(commandWords[2]);
+                    this.InsertUnit(parasite);
+                    break;
                 default:
                     base.ExecuteInsertUnitCommand(commandWords);
+                    break;
+            }
+        }
+
+        protected override void ProcessSingleInteraction(Interaction interaction)
+        {
+            switch (interaction.InteractionType)
+            {
+                case InteractionType.Infest:                    
+                    Unit targetUnit = this.GetUnit(interaction.TargetUnit);
+                    targetUnit.AddSupplement(new InfestationSpores());
+                    break;
+                default: 
+                    base.ProcessSingleInteraction(interaction);
                     break;
             }
         }
