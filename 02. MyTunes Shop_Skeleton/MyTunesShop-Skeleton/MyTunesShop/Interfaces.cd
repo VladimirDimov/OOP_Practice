@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Interface Name="MyTunesShop.IAlbum" Collapsed="true">
+    <Position X="1" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAIEAAAEAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IAlbum.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MyTunesShop.IBand" Collapsed="true">
+    <Position X="3.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Interfaces\IBand.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MyTunesShop.IMedia" Collapsed="true">
+    <Position X="1" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IMedia.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MyTunesShop.IPerformer" Collapsed="true">
+    <Position X="3.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAQAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IPerformer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MyTunesShop.IRateable" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IRateable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MyTunesShop.ISong" Collapsed="true">
+    <Position X="1" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAACAAAAAAIAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ISong.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
