@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="RestaurantManager.Models.Restaurant" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAIEIAQCAKAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Restaurant.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="RestaurantManager.Models.Drink">
+    <Position X="7.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAIAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Drink.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="RestaurantManager.Models.Meal">
+    <Position X="2.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Models\Meal.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="RestaurantManager.Models.Recipe">
+    <Position X="3.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAABAAAAAQEgAAAAIAAAAEQAAAUEAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Models\Recipe.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="RestaurantManager.Models.Salad">
+    <Position X="0.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAgAAAAIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Salad.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="RestaurantManager.Models.MainCourse">
+    <Position X="2.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAABAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Models\MainCourse.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="RestaurantManager.Models.Dessert">
+    <Position X="5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAIAAAACAAAAAAAAA=</HashCode>
+      <FileName>Dessert.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="RestaurantManager.Interfaces.IRestaurant" Collapsed="true">
+    <Position X="12.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIEIAQAAKAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IRestaurant.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="RestaurantManager.Models.MainCourseType" Collapsed="true">
+    <Position X="9.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAgAABAAAABQAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\MainCourseType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="RestaurantManager.Models.MetricUnit" Collapsed="true">
+    <Position X="11.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\MetricUnit.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
